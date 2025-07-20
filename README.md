@@ -62,8 +62,12 @@ Ensure backend is reachable at http://localhost:8080/
 
 Start managing your medicines 🧪
 
+
+
 🔗 Backend Repository
-👉 Med Manager – Backend (Spring Boot)
+👉 https://github.com/mayank06-T/Med-Manager-Backend-
+
+
 
 🙌 Author
 👨‍💻 Mayank Tiwari
