@@ -1,0 +1,85 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #001f1f, #032e2e);
+  color: #e6fdfd;
+  padding: 40px;
+  margin: 0;
+}
+
+.invoice-box {
+  max-width: 850px;
+  margin: auto;
+  background: rgba(0, 60, 60, 0.2);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 16px;
+  padding: 30px 40px;
+  box-shadow: 0 0 25px rgba(6, 57, 57, 0.1);
+  border: 1px solid rgba(6, 41, 41, 0.3);
+  transition: background 0.3s ease, transform 0.2s;
+}
+
+.invoice-box:hover {
+  background: rgba(0, 90, 90, 0.3);
+  box-shadow: 0 0 35px rgba(1, 52, 30, 0.3);
+  transform: scale(1.01);
+}
+
+h2 {
+  text-align: center;
+  color: #00ffff;
+  margin-bottom: 30px;
+}
+
+.details p {
+  font-size: 16px;
+  margin: 8px 0;
+  color: #ccfdfd;
+}
+
+.total {
+  font-weight: bold;
+  font-size: 18px;
+  color: #80ffff;
+  text-align: right;
+  margin-top: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 25px;
+  font-size: 15px;
+}
+
+th, td {
+  padding: 12px 15px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  text-align: left;
+}
+
+th {
+  background-color: rgba(10, 39, 39, 0.4);
+  color: #aaffff;
+}
+
+td {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+#downloadBtn {
+  display: block;
+  margin: 30px auto 0;
+  padding: 12px 28px;
+  background-color: #041a1a;
+  border: none;
+  color: #fff;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#downloadBtn:hover {
+  background-color: #056045;
+}

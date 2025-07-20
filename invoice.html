@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Invoice</title>
+  <link rel="stylesheet" href="invoice.css">
+</head>
+<body>
+  
+    <h2>Invoice</h2>
+
+    <div class="details">
+      <p><strong>Invoice ID:</strong> <span id="invoiceId"></span></p>
+      <p><strong>Date:</strong> <span id="invoiceDate"></span></p>
+      <p class="total">Total Amount: ₹<span id="totalAmount"></span></p>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Product</th>
+          <th>Quantity</th>
+          <th>Price (₹)</th>
+          <th>Total (₹)</th>
+        </tr>
+      </thead>
+      <tbody id="itemsTableBody"></tbody>
+    </table>
+
+    <button id="downloadBtn" onclick="downloadInvoicePDF()">Download PDF</button>
+  </div>
+  
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="invoice.js"></script>
+</body>
+</html>

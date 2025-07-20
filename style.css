@@ -1,0 +1,227 @@
+/* Base styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  color: #ffffff;
+}
+
+/* Glass container */
+section {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-radius: 20px;
+  padding: 30px;
+  margin-top: 50px;
+  width: 90%;
+  max-width: 900px;
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.1), 0 0 60px rgba(0, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Heading */
+#pageHeading {
+  text-align: center;
+  font-size: 2.8em;
+  font-weight: bold;
+  color: #036044;
+  text-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+  margin-bottom: 30px;
+}
+
+/* Vertical button layout */
+.vertical-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Buttons with glow */
+button {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(0, 255, 255, 0.2);
+  padding: 14px 25px;
+  font-size: 16px;
+  border-radius: 12px;
+  color: #97a1a1;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 220px;
+  box-shadow: 0 0 10px rgba(2, 81, 66, 0.15);
+}
+
+button:hover {
+  background: rgba(2, 43, 32, 0.1);
+  box-shadow: 0 0 20px rgba(6, 27, 27, 0.4);
+  color: #ffffff;
+}
+
+/* Inputs */
+input {
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 8px;
+  border: 1px solid rgba(3, 61, 44, 0.2);
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #c2cccc;
+  width: 100%;
+  max-width: 300px;
+  outline: none;
+}
+
+input::placeholder {
+  color: rgba(0, 255, 255, 0.4);
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  padding: 12px;
+  border: 1px solid rgba(0, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #ffffff;
+  text-align: center;
+}
+
+/* Back button styling */
+#back, #backToHomeFromSales {
+  margin-bottom: 20px;
+  width: auto;
+  background-color: rgba(255, 255, 255, 0.08);
+  color: #00ffff;
+}
+
+/* Suggestion box styling */
+.suggestion-box {
+  background-color: rgba(0, 255, 255, 0.05);
+  border-radius: 10px;
+  color: #ffffff;
+  padding: 10px;
+  margin-top: 5px;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
+}
+
+/* Toggle Switch Style */
+.toggle-container {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.mode-label {
+  color: #00ffff;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #555;
+  transition: 0.4s;
+  border-radius: 24px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #00ffff;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+/* LIGHT THEME */
+body.light-theme {
+  background: linear-gradient(135deg, #f0f0f0, #ffffff);
+  color: #111;
+}
+
+body.light-theme section {
+  background: rgba(255, 255, 255, 0.65);
+  color: #000;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+body.light-theme button {
+  background: rgba(0, 0, 0, 0.05);
+  color: #222;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+body.light-theme #pageHeading,
+body.light-theme .mode-label {
+  color: #008080;
+}
+
+body.light-theme input {
+  background: rgba(0, 0, 0, 0.05);
+  color: #111;
+}
+
+body.light-theme th, body.light-theme td {
+  background: rgba(255, 255, 255, 0.8);
+  color: #111;
+}
+#mainSection {
+  background: rgba(255, 255, 255, 0.1); /* Glass effect base */
+  border-radius: 20px;
+  padding: 40px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+/* Hover effect */
+#mainSection:hover {
+  background: rgba(2, 27, 27, 0.25);
+
+  box-shadow: 0 12px 40px rgba(4, 49, 49, 0.4);
+  transform: scale(1.01);
+  border-color: rgba(4, 39, 39, 0.5);
+}

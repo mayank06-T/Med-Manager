@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Medical Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="toggle-container">
+  <label class="switch">
+    <input type="checkbox" id="themeToggle">
+    <span class="slider"></span>
+  </label>
+  <span class="mode-label">Dark Mode</span>
+</div>
+
+  <section id="mainSection">
+  <h1 id="pageHeading">Medical Store</h1>
+  <div class="vertical-buttons">
+    <button id="showProductSection">Manage Products</button>
+    <button id="openSalesSection">Sales</button>
+  </div>
+</section>
+
+  
+  <section id="productSection" style="display: none;">
+
+    <button id="back">Home</button>
+    <h2>Add Product</h2>
+    <form id="productForm">
+      <input type="text" id="name" placeholder="Name" required>
+      <input type="date" id="expire" placeholder="Expiry Date" required>
+      <input type="number" id="quantity" placeholder="Quantity" required>
+      <input type="number" id="price" placeholder="Price" required>
+      <button type="submit">Add Product</button>
+    </form>
+
+    <h2>Product List</h2>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>ID</th><th>Name</th><th>Expire</th><th>Quantity</th><th>Price</th><th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="productTableBody"></tbody>
+    </table>
+  </section>
+
+  <section id="salesSection" style="display: none;">
+  <button id="backToHomeFromSales">← Back</button>
+  <h2> Sale</h2>
+  
+  <form id="salesForm">
+
+   <input type="text" id="productSearch" placeholder="Search product..." required autocomplete="off">
+   <div id="suggestions" class="suggestion-box"></div>
+
+    <input type="number" id="saleQuantity" placeholder="Quantity" required>
+    <button type="submit">Submit Sale</button>
+  </form>
+
+  <h2>All Sales</h2>
+  <table border="1">
+    <thead>
+      <tr>
+        <th>ID</th><th>Date</th><th>Total Amount</th><th>Action</th>
+      </tr>
+    </thead>
+    <tbody id="salesTableBody"></tbody>
+  </table>
+
+
+</section>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
